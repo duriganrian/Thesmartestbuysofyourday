@@ -1,0 +1,59 @@
+{
+  "search_placeholder": "Search product by name",
+  "buy_now": "Buy now",
+  "loading_message": "Loading or no product found.",
+  "home_title": "Choose your supplement by category",
+  "home_subtitle": "Find the best products for your health and well-being.",
+  "categories": {
+    "proteins": "Proteins",
+    "vegan": "Vegan",
+    "vegetarian": "Vegetarian",
+    "thermogenics": "Thermogenics",
+    "vitamins": "Vitamins",
+    "clinical_line": "Clinical Line",
+    "amino_acids": "Amino Acids",
+    "carbohydrates": "Carbohydrates"
+  },
+  "approval_seals": "Approval Seals",
+  "social_media": {
+    "social_networks": "Social Networks",
+    "follow_us": "Follow us on social media"
+  },
+  "nav": {
+    "men": "Men",
+    "women": "Women",
+    "elderly": "Elderly",
+    "mental_health": "Mental Health",
+    "general_products": "General Products"
+  },
+  "products": {
+    "general": {
+      "product_1_name": "NeuroPure",
+      "product_1_description": "NeuroPure is a natural supplement that supports nerve health and neurological well-being.",
+      "product_1_price": "$79.99",
+      "product_2_name": "Gluco6",
+      "product_2_description": "Gluco6 is a natural supplement that helps control blood sugar and improve metabolism.",
+      "product_2_price": "$69.99",
+      "product_3_name": "Dentavim",
+      "product_3_description": "Dentavim is a supplement designed to strengthen teeth and gums, promoting complete oral health.",
+      "product_3_price": "$49.99",
+      "product_4_name": "ProDentim",
+      "product_4_description": "ProDentim is a probiotic supplement that strengthens teeth and improves oral health.",
+      "product_4_price": "$59.99"
+    },
+    "health": {
+      "product_1_name": "Steel Flow Pro",
+      "product_1_description": "Supports prostate health and male well-being.",
+      "product_1_price": "$79.99",
+      "product_2_name": "Protoflow",
+      "product_2_description": "Aids blood sugar control and metabolic function.",
+      "product_2_price": "$69.99",
+      "product_3_name": "Gorilla Flow",
+      "product_3_description": "Strengthens teeth and gums for better oral health.",
+      "product_3_price": "$49.99",
+      "product_4_name": "Ultra Prosta Care",
+      "product_4_description": "Advanced support for prostate and urinary health.",
+      "product_4_price": "$59.99"
+    }
+  }
+}

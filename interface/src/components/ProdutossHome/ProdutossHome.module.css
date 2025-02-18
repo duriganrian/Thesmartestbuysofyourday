@@ -1,0 +1,550 @@
+/* Container dos produtos */
+.cardsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  /* Espaçamento entre os produtos */
+  margin: 40px auto;
+  max-width: 100%;
+
+}
+
+.section {
+  margin-bottom: 7.5%;
+}
+
+
+/* 🔥 Carrossel ocupando toda a largura mantendo funcionalidade */
+.carousel {
+  width: 100%;
+  height: auto;
+  margin-top: 5.30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: auto;
+  /* Permite interação com o clique */
+}
+
+.carousel img {
+  width: 100vw;
+  height: auto;
+  object-fit: cover;
+}
+
+
+/* Container para os ícones das redes sociais */
+.iconesSociais {
+  display: flex;
+  gap: 15px;
+  /* Espaço entre os ícones */
+  justify-content: center;
+}
+
+/* Ícones das redes sociais (Instagram, Facebook) */
+.iconesSociais img {
+  width: 70px;
+  /* 🔥 Define um tamanho menor */
+  height: 70px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Efeito ao passar o mouse */
+.iconesSociais img:hover {
+  transform: scale(1.1);
+}
+
+/* Grid para os produtos ficarem lado a lado */
+.cardsGrid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  /* Espaçamento entre os produtos */
+}
+
+/* Cada card de produto */
+.cardWrapper {
+  width: 300px;
+  /* 🔥 Tamanho fixo */
+  height: 420px;
+  /* 🔥 Mantém o mesmo tamanho */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Efeito ao passar o mouse */
+.cardWrapper:hover {
+  transform: scale(1.05);
+}
+
+/* Imagem do produto */
+.cardImage {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+/* Placeholder caso não haja imagem */
+.produtoPlaceholder {
+  width: 100%;
+  height: 180px;
+  background-color: white;
+  border: 2px dashed #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Nome e descrição do produto */
+.descricao {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Preço do produto */
+.preco {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007BFF;
+  margin-bottom: 15px;
+}
+
+/* Botão de compra */
+.cardWrapper Button {
+  width: 100%;
+  background-color: #007BFF;
+  border: none;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-top: auto;
+  /* 🔥 Empurra o botão para o final do card */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 🔥 Ajusta o link dentro do botão */
+.cardWrapper Button a {
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+.cardWrapper Button:hover {
+  background-color: #0056b3;
+}
+
+/* 🔥 Mantém os produtos lado a lado sem quebrar a linha */
+@media (max-width: 1024px) {
+  .cardsGrid {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}
+
+/* 📌 Ajuste para telas pequenas */
+@media (max-width: 768px) {
+  .cardsGrid {
+    flex-wrap: wrap;
+    /* Permite quebra apenas quando necessário */
+  }
+}
+
+.languageSelector {
+  height: 35px;
+  margin-top: 7%;
+  border-radius: 8px;
+  margin-top: 10%;
+}
+
+.searchContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+  /* Ajuste conforme necessário */
+}
+
+.inputBusca {
+  width: 80%;
+  height: 35px;
+  padding: 5px 35px 5px 10px;
+  /* Adiciona espaço para a lupa no lado direito */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-top: 5%;
+}
+
+.searchIcon {
+  position: absolute;
+  right: 10px;
+  /* Ajusta a posição da lupa para o lado direito */
+  color: #555;
+  cursor: pointer;
+  margin-right: 30px;
+  margin-top: 28px;
+}
+
+
+/* Estilos para a seção "Escolha seu suplemento por categoria" */
+.categoriaSection {
+  text-align: center;
+  margin: 50px 0;
+  padding: 20px;
+  background: #fff;
+}
+
+.categoriaTituloContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 80%;
+  margin: 0 auto 20px auto;
+  background: #fff;
+}
+
+.categoriaTitulo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+.categoriaContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  max-width: 1200px;
+  margin: auto;
+  height: auto;
+}
+
+.categoriaItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+/* Aplicação dinâmica das imagens de fundo */
+.categoriaItem.proteinas {
+  background-image: url('../../../src/assets/proteinas.jpg');
+}
+
+.categoriaItem.veganos {
+  background-image: url('../../assets/veganos.jpg');
+}
+
+.categoriaItem.vegetarianos {
+  background-image: url('../../assets/vegetarianos.jpg');
+}
+
+.categoriaItem.termogenicos {
+  background-image: url('../../assets/termogenicos.jpg');
+}
+
+.categoriaItem.vitaminas {
+  background-image: url('../../assets/vitaminas.jpg');
+}
+
+.categoriaItem.linhaClinica {
+  background-image: url('../../assets/linha-clinica.jpg');
+}
+
+.categoriaItem.aminoacidos {
+  background-image: url('../../assets/aminoacidos.jpg');
+}
+
+.categoriaItem.carboidratos {
+  background-image: url('../../assets/carboidratos.jpg');
+}
+
+/* Efeito de escurecimento e hover */
+.categoriaItem::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(2, 2, 2, 0.4);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.categoriaItem:hover::before {
+  opacity: 0.2;
+}
+
+.categoriaItem span {
+  position: relative;
+  z-index: 2;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.categoriaItem:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+
+/* 🔥 Estilos para a Barra de Selos de Aprovação */
+.selosContainer {
+  width: 94%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  white-space: nowrap;
+  background: linear-gradient(to right, #ffffff, #f8f8f8);
+  /* Fundo sutil para separação */
+  padding: 15px 0;
+  margin-bottom: 20px;
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-left: 3%;
+}
+
+/* 🔥 Imagem ocupando toda a largura corretamente */
+.imagem {
+  width: 98.9vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  animation: fadeOut 3s ease-in-out forwards;
+  /* Animação para a imagem desaparecer */
+  margin-top: 5%;
+}
+
+.foto {
+  width: 100vw;
+  /* Garante que a imagem ocupe toda a largura */
+  height: auto;
+  object-fit: cover;
+}
+
+
+/*  Animação imagem
+
+@keyframes fadeOut {
+  0% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-50px); }
+}
+
+*/
+
+/* Animação imagem
+
+@media (max-width: 768px) {
+  .navbarToggler {
+      display: block;
+  }
+}
+
+ */
+
+
+
+/* 🔄 Marquee para rolagem contínua */
+.selosMarquee {
+  display: flex;
+  width: max-content;
+  overflow: hidden;
+  white-space: nowrap;
+  gap: 15px;
+}
+
+/* Cada selo */
+.seloItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  flex-shrink: 0;
+  background: none;
+  padding: 0 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.seloItem:hover {
+  transform: scale(1.1);
+}
+
+/* Imagem dos selos */
+.seloImagem {
+  height: 100px;
+  width: auto;
+  margin: 0;
+  background: none;
+}
+
+/* Animação de rolagem contínua sem sumir no meio */
+@keyframes scrollSelos {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* 🔥 Separação e Interação com Redes Sociais */
+.redesSociaisContainer {
+  text-align: center;
+  padding: 30px 0;
+  background: #ffffff;
+  border-top: 2px solid #ddd;
+}
+
+.redesSociaisContainer h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.redesSociaisIcons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.redesSociaisIcons a {
+  transition: transform 0.3s ease-in-out;
+}
+
+.redesSociaisIcons a:hover {
+  transform: scale(1.2);
+}
+
+/* 🔥 Estilos do modal */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  text-align: center;
+  position: relative;
+}
+
+.modalImage {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+}
+
+/* 🔥 Ajuste no cursor dos produtos */
+.cardWrapper {
+  cursor: pointer;
+}
+
+.searchContainer {
+  position: relative;
+  /* Necessário para alinhar o histórico abaixo do input */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+  /* Ajuste conforme necessário */
+}
+
+.historicoBusca {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  max-width: 250px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 5px;
+  z-index: 10;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 12px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.historicoBusca.mostrar {
+  max-height: 120px;
+  /* Expande suavemente */
+}
