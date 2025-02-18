@@ -11,8 +11,6 @@
     "preview": "vite preview",
     "start": "npm run server"
   },
-
-
   "keywords": [],
   "author": "",
   "license": "ISC",
