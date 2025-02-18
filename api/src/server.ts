@@ -1,14 +1,16 @@
 import express from 'express';
 import cors from 'cors';
-import { router } from './router'; // 
+import { router } from './router'; // Supondo que este seja o arquivo de rotas
 
 const server = express();
 
 server.use(express.json());
+
+// Adicione esta configuração CORS corretamente
 server.use(cors({
-    origin: "https://thesmartestbuysofyourday.com", // Permite requisições apenas deste domínio
-    methods: ["GET", "POST", "PUT", "DELETE"], // Permite esses métodos
-    allowedHeaders: ["Content-Type", "Authorization"] // Permite esses cabeçalhos
+    origin: "*", // Permite qualquer domínio acessar a API
+    methods: ["GET", "POST", "PUT", "DELETE"], // Métodos permitidos
+    allowedHeaders: ["Content-Type", "Authorization"] // Cabeçalhos permitidos
 }));
 
 server.use(router);
