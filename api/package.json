@@ -8,8 +8,11 @@
     "client": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "npm run server"
   },
+
+
   "keywords": [],
   "author": "",
   "license": "ISC",
