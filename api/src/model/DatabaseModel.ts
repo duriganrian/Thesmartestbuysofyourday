@@ -1,4 +1,4 @@
-{/*
+
 import pg from 'pg';
 import dotenv from 'dotenv';
 
@@ -37,4 +37,3 @@ export class DatabaseModel {
         return this._pool;
     }
 }
- */}

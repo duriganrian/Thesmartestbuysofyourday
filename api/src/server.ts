@@ -1,14 +1,14 @@
 import express from 'express';
 import cors from 'cors';
-import { router } from './router'; // Supondo que este seja o arquivo de rotas
+import { router } from './router'; // Confirme se esse é o arquivo correto
 
 const server = express();
 
 server.use(express.json());
 
-// Adicione esta configuração CORS corretamente
+// Permitir todas as origens (CORREÇÃO AQUI)
 server.use(cors({
-    origin: "*", // Permite qualquer domínio acessar a API
+    origin: "*", // Permite que qualquer domínio acesse a API
     methods: ["GET", "POST", "PUT", "DELETE"], // Métodos permitidos
     allowedHeaders: ["Content-Type", "Authorization"] // Cabeçalhos permitidos
 }));
